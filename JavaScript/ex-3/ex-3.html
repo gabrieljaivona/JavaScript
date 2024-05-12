@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3</title>
+    <style>
+        #area{
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            color: white;
+            font: normal 15pt Arial;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        h1{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"><!--desse jeito fica poluido o  HTML-->
+        <h1>interaja...</h1>
+    </div>
+    
+
+    <script>
+        var a = document.getElementById('area') //selecionando por ID
+        a.addEventListener('click', clicar)//desse jeito o HTML não fica poluido
+        a.addEventListener('mouseenter', entrar)//pois não precisa colocar na div
+        a.addEventListener('mouseout', sair)
+
+        function clicar(){//'clicar' é o nome da função
+            a.innerText = 'Clicou! blá, blá'
+        }
+        function entrar(){
+            a.innerText ='Entrou'
+            a.style.background = 'red'
+        }
+        function sair(){
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
