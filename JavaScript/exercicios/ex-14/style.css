@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #8155aad8;
+    font: normal 1.5rem Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+#msg{
+    text-align: center;
+}
+h2, h3{
+    display: inline;
+    font: normal 1.5rem Arial;
+}
+#foto{
+    text-align: center;
+}
+#imagem{
+    height: 400px;
+    width: 400px;
+    border-radius: 1000px;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    width: 700px;
+    height: 900px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.678);
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
